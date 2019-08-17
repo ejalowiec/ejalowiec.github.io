@@ -13,77 +13,88 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
+    <!-- class="page" for the sake of flexbox -->
 
     <!-- Main navigation -->
-    <nav>
-        <ul class="clearfix">
-            <li><a href="#"><i class="fas fa-home"></i>Start</a></li>
-            <li><a href="#"><i class="far fa-address-card"></i>About me</a></li>
-            <li><a href="#"><i class="far fa-file-alt"></i>Abilities</a></li>
-            <li><a href="#"><i class="fas fa-users"></i>Contact</a></li>
+    <nav class="main-nav page__nav">
+        <ul class="main-nav__list clearfix">
+            <li class="main-nav__list-item">
+                <a href="#" class="main-nav__list-item-link"><i class="fas fa-home"></i>Start</a></li>
+            <li class="main-nav__list-item">
+                <a href="#" class="main-nav__list-item-link"><i class="far fa-address-card"></i>About me</a></li>
+            <li class="main-nav__list-item">
+                <a href="#" class="main-nav__list-item-link"><i class="far fa-file-alt"></i>Abilities</a></li>
+            <li class="main-nav__list-item">
+                <a href="#" class="main-nav__list-item-link"><i class="fas fa-users"></i>Contact</a></li>
         </ul>
     </nav>
-    <header>
-        <div class="welcome">
-            <p>Hi!</p>
-            <h1>I am Eryk Jałowiec</h1>
-            <h2>Future Linux Administrator</h2>
-            <button>Find out who I am</button>
+
+    <!-- Header -->
+    <header class="header page__header">
+        <div class="header__wrap">
+            <p class="header__wrap-greetings">Hi!</p>
+            <h1 class="header__wrap-name">I am Eryk Jałowiec</h1>
+            <h2 class="header__wrap-profession">Future Linux Administrator</h2>
+            <button class="header__wrap-button">Find out who I am</button>
         </div>
-        <img src="images/my-photo.png" alt="Eryk Jalowiec's Photo">
+        <img class="header__photo" src="images/my-photo.png" alt="Eryk Jalowiec's Photo">
     </header>
 
     <!-- About me -->
-    <section>
-        <h2>About me</h2>
+    <section class="about-me page__section-aboutMe">
+        <h2 class="about-me__title">About me</h2>
 
     </section>
 
     <!-- Skills -->
-    <section>
-        <h2>Abilities</h2>
+    <section class="abilities page__section-abilities">
+        <h2 class="abilities__title">Abilities</h2>
 
     </section>
 
     <!-- Now learning -->
-    <section>
-        <h2>Now learning</h2>
+    <section class="now-learning page__section-nowLearning">
+        <h2 class="now-learning__title">Now learning</h2>
 
     </section>
 
     <!-- Slogan -->
-    <section>
-        <h3>If you want something, work hard to get it</h3>
+    <section class="slogan page__slogan">
+        <h3 class="slogan__title">If you want something, work hard to get it</h3>
 
     </section>
 
     <!-- Contact -->
-    <section class="contact">
-        <h2>Contact me</h2>
-        <div class="wrap clearfix">
-            <form>
-                <input type="text" placeholder="Twoje imię">
-                <input type="text" placeholder="Email">
-                <textarea placeholder="Treść wiadomości"></textarea>
-                <button>Send me a message</button>
+    <section class="contact page__contact">
+        <h2 class="contact__title">Contact me</h2>
+        <div class="contact__wrap clearfix">
+            <form class="contact__form form">
+                <input class="contact__form-name" type="text" placeholder="Twoje imię">
+                <input class="contact__form-mail" type="text" placeholder="Email">
+                <textarea class="contact__form-message" placeholder="Treść wiadomości"></textarea>
+                <button class="contact__form-button">Send me a message</button>
             </form>
-            <div class="socials clearfix">
-                <div class="social clearfix"><img src="images/contact1.png"
+            <div class="contact__wrapSocials clearfix">
+                <div class="contact__wrapSocials-social clearfix"><img src="images/contact1.png"
                         alt="email"><span>eryk.jalowiec@gmail.com</span>
                 </div>
-                <div class="social clearfix"><img src="images/contact2.png" alt="numer telefonu"><span>664887561</span>
+                <div class="contact__wrapSocials-social clearfix"><img src="images/contact2.png"
+                        alt="numer telefonu"><span>664887561</span>
                 </div>
-                <div class="social clearfix"><img src="images/contact3.png" alt="facebook"><span>Facebook</span></div>
-                <div class="social clearfix"><img src="images/contact4.png" alt="twitter"><span>Twitter</span></div>
-                <div class="social clearfix"><img src="images/contact5.png"
+                <div class="contact__wrapSocials-social clearfix"><img src="images/contact3.png"
+                        alt="facebook"><span>Facebook</span></div>
+                <div class="contact__wrapSocials-social clearfix"><img src="images/contact4.png"
+                        alt="twitter"><span>Twitter</span></div>
+                <div class="contact__wrapSocials-social clearfix"><img src="images/contact5.png"
                         alt="linkedin"><a href="https://www.linkedin.com/in/eryk-ja%C5%82owiec-30807a16a/"><span>LinkedIn</span></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>Eryk Jałowiec&copy;2019</footer>
+    <!-- Footer -->
+    <footer class="footer page__footer">Eryk Jałowiec&copy;2019</footer>
 </body>
 
 </html>
