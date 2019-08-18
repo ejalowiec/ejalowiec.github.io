@@ -13,4 +13,119 @@ font-family: 'Saira Condensed', sans-serif;
     content: "";
     display: block;
     clear: both;
-  }
+}
+
+html {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.page {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* Domyślnie - usunąć potem */
+    /* justify-content: space-between; */
+    /* align-content: center; */
+    background-color: #ddd;
+}
+
+/* *************** Main navigation *************** */
+
+.page__mainNav {
+    /* position: fixed; */
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    /* flex-basis: 80px; */
+    /* padding-left: 5%; */
+    width: 100%;
+    background-color: #2db1e9;
+    /*    text-align: right;*/
+    z-index: 9999;
+}
+
+.main-nav__list {
+    /* max-width: 1280px; */
+    list-style: none;
+}
+
+.main-nav__list-item {
+    /* float: left; */
+    display: inline-block;
+    padding: 13px 30px;
+}
+
+.main-nav__list-item-link {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    /* border-right: 2px solid black; */
+}
+
+.main-nav__list-item-link-i {
+    padding-right: 10px;
+    font-size: 24px;
+    vertical-align: -2px;
+}
+
+.main-nav__list-item-link:hover {
+    color: #222;
+    transition: 0.25s;
+}
+
+/* *************** Header *************** */
+
+.page__header {
+    flex-basis: 100vh;
+    background-color: rgb(174, 0, 255);
+}
+
+.header__wrap-greetings {}
+
+.header__wrap-name {}
+
+.header__wrap-profession {}
+
+.header__wrap-button {}
+
+.header__photo {}
+
+/* *************** Section About me *************** */
+
+.page__sectionAboutMe {
+    background-color: rgb(157, 255, 0);
+}
+
+/* *************** Section Abilities *************** */
+
+.page__sectionAbilities {
+    background-color: rgb(255, 81, 148);
+}
+
+/* *************** Section Now learning *************** */
+
+.page__sectionNowLearning {
+    background-color: rgb(255, 212, 94);
+}
+
+/* *************** Slogan *************** */
+
+.page__slogan {
+    background-color: rgb(19, 101, 255);
+}
+
+/* *************** Contact *************** */
+
+.page__contact {
+    background-color: rgb(0, 225, 255);
+}
+
+/* *************** Footer *************** */
+
+.page__footer {
+    background-color: rgb(185, 62, 24);
+}
