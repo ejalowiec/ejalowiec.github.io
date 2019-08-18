@@ -40,7 +40,7 @@ html {
     background-color: #2db1e9;
     /*    text-align: right;*/
     z-index: 9999;
-    opacity: 0.25;
+    /* opacity: 0.25; */
 }
 
 .main-nav__list {
@@ -85,8 +85,8 @@ html {
     /* background-image: url(../images/bg-tuxes.png); */
     /* background-size: cover; */
     /* background-position: center; */
-    /* filter: blur(2px);
-    -webkit-filter: blur(2px) */
+    /* filter: blur(2px); */
+    /* -webkit-filter: blur(2px); */
 }
 
 .page__header>* {
@@ -143,6 +143,10 @@ html {
 
     .page__mainNav {
         display: none;
+    }
+
+    .main-nav--isActive {
+        opacity: 0.25;
     }
 
     .header__wrap-name {
@@ -241,6 +245,10 @@ html {
         /* display: flex; */
     }
 
+    .main-nav--isActive {
+        opacity: 0.25;
+    }
+
     .header__wrap {
         left: 12%;
     }
@@ -270,12 +278,12 @@ html {
 }
 
 @media (min-width: 1024px) {
-    header button {
+    .header__wrap-button {
         cursor: pointer;
         transition: .3s;
     }
 
-    header button:hover {
+    .header__wrap-button:hover {
         background-color: #fff;
         color: #222;
     }
@@ -285,13 +293,67 @@ html {
 /* *************** Section About me *************** */
 
 .page__sectionAboutMe {
+    max-width: 1600px;
+    /* margin: auto; */
+    padding: 100px 150px 160px;
+    text-align: center;
     background-color: rgb(157, 255, 0);
+}
+
+.about-me__title {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.about-me__description {
+    font-size: 16px;
+    font-weight: 300;
+    /* margin: 20px 0; */
 }
 
 /* *************** Section Abilities *************** */
 
 .page__sectionAbilities {
+    padding: 100px 150px 120px;
+    text-align: center;
+    width: 100%;
+}
+
+.abilities__title {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.abilities__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 35px 15px;
+    min-height: 500px;
     background-color: rgb(255, 81, 148);
+    color: #222;
+    font-size: 18px;
+}
+
+.abilities__skill {
+    flex-basis: 25%;
+}
+
+.abilities__skill-i {
+    font-size: 4em;
+}
+
+.abilities__skillCaption {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.abilities__MySQL {
+    /* display: none; */
 }
 
 /* *************** Section Now learning *************** */
