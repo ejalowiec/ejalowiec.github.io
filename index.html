@@ -20,24 +20,24 @@
     <nav class="main-nav page__mainNav main-nav--isActive">
         <ul class="main-nav__list">
             <li class="main-nav__list-item">
-                <a href="#" class="main-nav__list-item-link"><i class="fas fa-home main-nav__list-item-link-i"></i>Start</a>
+                <a href="#home" class="main-nav__list-item-link"><i class="fas fa-home main-nav__list-item-link-i"></i>Home</a>
             </li>
             <li class="main-nav__list-item">
-                <a href="#" class="main-nav__list-item-link"><i class="far fa-address-card main-nav__list-item-link-i"></i>About me</a>
+                <a href="#aboutMe" class="main-nav__list-item-link"><i class="far fa-address-card main-nav__list-item-link-i"></i>About me</a>
             </li>
             <li class="main-nav__list-item">
-                <a href="#" class="main-nav__list-item-link"><i class="far fa-file-alt main-nav__list-item-link-i"></i>Abilities</a>
+                <a href="#skills" class="main-nav__list-item-link"><i class="far fa-file-alt main-nav__list-item-link-i"></i>Abilities</a>
             </li>
             <li class="main-nav__list-item">
-                <a href="#" class="main-nav__list-item-link"><i class="fas fa-users main-nav__list-item-link-i"></i>Contact</a>
+                <a href="#contact" class="main-nav__list-item-link"><i class="fas fa-users main-nav__list-item-link-i"></i>Contact</a>
             </li>
         </ul>
     </nav>
 
     <!-- Header -->
-    <header class="header page__header">
+    <header id="home" class="header page__header">
         <div class="header__wrap">
-            <p class="header__wrap-greetings">Hi!</p>
+            <p class="header__wrap-greetings">Hello!</p>
             <h1 class="header__wrap-name">I am Eryk Jałowiec</h1>
             <h2 class="header__wrap-profession">Future Linux Administrator</h2>
             <button class="header__wrap-button">Scroll down to explore \/ \/ \/</button>
@@ -46,7 +46,7 @@
     </header>
 
     <!-- About me -->
-    <section class="about-me page__sectionAboutMe">
+    <section id="aboutMe" class="about-me page__sectionAboutMe">
         <h2 class="about-me__title">About me</h2>
         <p class="about-me__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta placeat optio
             ea ratione tenetur. Repellendus ipsa dolor blanditiis delectus commodi quam quia hic, vel voluptates
@@ -60,8 +60,8 @@
     </section>
 
     <!-- Skills -->
-    <section class="abilities page__sectionAbilities">
-        <h2 class="abilities__title">Abilities</h2>
+    <section id="skills" class="abilities page__sectionAbilities">
+        <h2 class="abilities__title">My abilities</h2>
         <div class="abilities__wrap">
             <figure class="abilities__skill">
                 <i class="fab fa-html5 abilities__skill-i"></i>
@@ -74,6 +74,10 @@
             <figure class="abilities__skill">
                 <i class="fab fa-js abilities__skill-i"></i>
                 <figcaption class="abilities__skillCaption">JavaScript</figcaption>
+            </figure>
+            <figure class="abilities__skill">
+                <i class="fab fa-sass abilities__skill-i"></i>
+                <figcaption class="abilities__skillCaption">Sass</figcaption>
             </figure>
             <figure class="abilities__skill">
                 <i class="fab fa-git abilities__skill-i"></i>
@@ -91,9 +95,6 @@
                 <img src="images/mysql69.png" alt="" class="abilities__MySQL">
                 <figcaption class="abilities__skillCaption abilities__MySQL">MySQL</figcaption>
             </figure>
-            <figure class="abilities__skill">
-                <i class="fab fa-sass abilities__skill-i"></i>
-                <figcaption class="abilities__skillCaption">Sass</figcaption>
 
         </div>
     </section>
@@ -101,19 +102,30 @@
     <!-- Now learning -->
     <section class="now-learning page__sectionNowLearning">
         <h2 class="now-learning__title">Now learning</h2>
+        <div class="now-learning__wrap">
+            <figure class="now-learning__skill">
+                <i class="fab fa-linux now-learning__skill-i"></i>
+                <figcaption class="now-learning__skillCaption">Linux</figcaption>
+            </figure>
+            <!-- <figure class="now-learning__skill">
+                <i class="fab fa-ubuntu now-learning__skill-i"></i>
+                <figcaption class="now-learning__skillCaption">Ubuntu</figcaption>
+            </figure> -->
+        </div>
 
     </section>
 
-    <!-- Slogan -->
-    <section class="slogan page__slogan">
-        <h3 class="slogan__title">If you want something, work hard to get it</h3>
-
+    <!-- Quote -->
+    <section class="quote page__sectionQuote">
+        <blockquote class="quote__blockquote" lang="en">
+            <h3 class="quote__title">&ldquo;If you want something, work hard to get it&rdquo; ~ <span class="quote__titleSpan">me</span></h3>
+        </blockquote>
     </section>
 
     <!-- Contact -->
-    <section class="contact page__contact">
+    <section id="contact" class="contact page__sectionContact">
         <h2 class="contact__title">Contact me</h2>
-        <div class="contact__wrap clearfix">
+        <div class="contact__wrap">
             <form class="contact__form form">
                 <input class="contact__form-name" type="text" placeholder="Twoje imię">
                 <input class="contact__form-mail" type="text" placeholder="Email">
@@ -139,7 +151,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer page__footer">Eryk Jałowiec&copy;2019</footer>
+    <footer class="footer page__footer">Copyright &copy; 2019 Eryk Jałowiec</footer>
 </body>
 
 </html>

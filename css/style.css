@@ -9,11 +9,11 @@ font-family: 'Saira Condensed', sans-serif;
     box-sizing: border-box;
 }
 
-.clearfix::after {
+/* .clearfix::after {
     content: "";
     display: block;
     clear: both;
-}
+} */
 
 html {
     font-family: 'Saira Condensed', sans-serif;
@@ -35,12 +35,14 @@ html {
 .page__mainNav {
     display: flex;
     position: fixed;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
-    background-color: #2db1e9;
-    /*    text-align: right;*/
+    padding-right: 40px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    background-color: rgba(14, 216, 214, 0.6);
     z-index: 9999;
-    /* opacity: 0.25; */
+    opacity: 0.25;
 }
 
 .main-nav__list {
@@ -78,13 +80,12 @@ html {
 .page__header {
     position: relative;
     flex-basis: 100vh;
-    /* height: 100vh; */
     max-width: 1920px;
     overflow: hidden;
-    background-color: rgb(174, 0, 255);
-    /* background-image: url(../images/bg-tuxes.png); */
-    /* background-size: cover; */
-    /* background-position: center; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/bg-tuxes.png);
     /* filter: blur(2px); */
     /* -webkit-filter: blur(2px); */
 }
@@ -96,50 +97,58 @@ html {
 .header__wrap {
     z-index: 1;
     top: 7%;
-    left: 5%;
+    left: 12%;
     right: 5%;
     font-family: 'Saira Condensed',
         sans-serif;
     color: white;
     font-size: 40px;
     font-weight: bold;
-    text-align: center;
     text-transform: uppercase;
 }
 
-/* .header__wrap-greetings {
-    
-} */
+.header__wrap-greetings {
+    font-size: 120px;
+}
 
 .header__wrap-name {
-    margin-top: 15px;
-    font-size: 20px;
+    margin-top: 40px;
+    font-size: 60px;
 }
 
 .header__wrap-profession {
-    font-size: 20px;
+    font-size: 60px;
     font-weight: normal;
 }
 
 .header__wrap-button {
+
+    line-height: 90px;
+    padding: 0 20px;
+    margin-top: 80px;
     font-family: 'Saira', sans-serif;
     font-weight: 300;
-    line-height: 32px;
-    padding: 0 20px;
+    font-size: 28px;
     text-transform: uppercase;
-    color: white;
     background-color: transparent;
-    font-size: 12px;
+    color: white;
     border: 2px solid white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header__wrap-button:hover {
+    background-color: #fff;
+    color: #222;
 }
 
 .header__photo {
-    height: 50%;
+    height: 90%;
     bottom: 0;
     right: 0;
 }
 
-@media (orientation: portrait) and (min-width: 360px) {
+/* @media (orientation: portrait) and (min-width: 360px) {
 
     .page__mainNav {
         display: none;
@@ -168,10 +177,8 @@ html {
         bottom: 0;
         right: 0;
     }
-}
-
-
-@media (orientation: landscape) and (min-width: 1024px) {
+} */
+/* @media (orientation: landscape) and (min-width: 1024px) {
 
     .header__wrap {
         left: 10%;
@@ -202,8 +209,8 @@ html {
 
     }
 }
-
-@media (orientation: landscape) and (min-width: 1280px) {
+ */
+/* @media (orientation: landscape) and (min-width: 1280px) {
 
     .header__wrap {
         text-align: left;
@@ -237,12 +244,11 @@ html {
 
     }
 
-}
-
-@media (orientation: landscape) and (min-width: 1600px) {
+} */
+/* @media (orientation: landscape) and (min-width: 1600px) {
 
     .page__mainNav {
-        /* display: flex; */
+        display: flex;
     }
 
     .main-nav--isActive {
@@ -274,10 +280,8 @@ html {
         right: 0%;
         height: 90%;
     }
-
-}
-
-@media (min-width: 1024px) {
+} */
+/* @media (min-width: 1024px) {
     .header__wrap-button {
         cursor: pointer;
         transition: .3s;
@@ -288,20 +292,20 @@ html {
         color: #222;
     }
 
-}
+} */
 
 /* *************** Section About me *************** */
 
 .page__sectionAboutMe {
-    max-width: 1600px;
+    /* max-width: 1500px; */
     /* margin: auto; */
-    padding: 100px 150px 160px;
+    padding: 80px 300px 100px;
     text-align: center;
-    background-color: rgb(157, 255, 0);
+    background-color: #f9fcfe;
 }
 
 .about-me__title {
-    font-size: 26px;
+    font-size: 44px;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
@@ -315,13 +319,13 @@ html {
 /* *************** Section Abilities *************** */
 
 .page__sectionAbilities {
-    padding: 100px 150px 120px;
+    padding: 80px 0 15px;
     text-align: center;
-    width: 100%;
+    background-color: #fff;
 }
 
 .abilities__title {
-    font-size: 26px;
+    font-size: 44px;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
@@ -334,7 +338,6 @@ html {
     margin: 0 auto;
     padding: 35px 15px;
     min-height: 500px;
-    background-color: rgb(255, 81, 148);
     color: #222;
     font-size: 18px;
 }
@@ -359,20 +362,82 @@ html {
 /* *************** Section Now learning *************** */
 
 .page__sectionNowLearning {
-    background-color: rgb(255, 212, 94);
+    padding: 20px 150px 80px;
+    text-align: center;
+    background-color: #f9fcfe;
 }
 
-/* *************** Slogan *************** */
+.now-learning__title {
+    font-size: 44px;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
 
-.page__slogan {
-    background-color: rgb(19, 101, 255);
+.now-learning__wrap {
+    display: flex;
+}
+
+.now-learning__skill {
+    flex-basis: 100%;
+}
+
+.now-learning__skill-i {
+    font-size: 290px;
+}
+
+.now-learning__skillCaption {
+    margin-top: 40px;
+    font-size: 42px;
+}
+
+/* *************** Quote *************** */
+
+.page__sectionQuote {
+    flex-basis: 80vh;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: #f9fcfe;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../images/can.jpg);
+}
+
+.quote__blockquote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.quote__title {
+    /* display: block;   */
+}
+
+.quote__titleSpan {
+    color: rgba(14, 216, 214)
 }
 
 /* *************** Contact *************** */
 
-.page__contact {
-    background-color: rgb(0, 225, 255);
+.page__sectionContact {
+    padding: 80px 150px 100px;
+    text-align: center;
+    background-color: #f9fcfe;
+    min-height: 200vh;
 }
+
+.contact__title {
+    font-size: 44px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.contact__wrap {}
+
+.contact__form {}
 
 /* *************** Footer *************** */
 
