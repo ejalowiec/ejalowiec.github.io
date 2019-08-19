@@ -9,11 +9,11 @@ font-family: 'Saira Condensed', sans-serif;
     box-sizing: border-box;
 }
 
-/* .clearfix::after {
+.clearfix::after {
     content: "";
     display: block;
     clear: both;
-} */
+}
 
 html {
     font-family: 'Saira Condensed', sans-serif;
@@ -425,8 +425,14 @@ html {
 .page__sectionContact {
     padding: 80px 150px 100px;
     text-align: center;
+    color: #f9fcfe;
     background-color: #f9fcfe;
     min-height: 200vh;
+    font-size: 24px;
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-image: linear-gradient(rgb(8, 20, 28), rgba(14, 216, 214, 0.5)), url(../images/bg-pattern.png)
 }
 
 .contact__title {
@@ -435,9 +441,42 @@ html {
     margin-bottom: 15px;
 }
 
-.contact__wrap {}
+.contact__wrap {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-top: 40px;
+}
 
-.contact__form {}
+.contact__formDescription {
+    flex-basis: 30%;
+}
+
+.contact__formDescription-yourName, .contact__formDescription-yourEmail,
+.contact__formDescription-yourPhone,
+.contact__formDescription-messageSubject,
+.contact__formDescription-yourMessage {
+    margin-top: 16px;
+margin-bottom: 16px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 40%;
+}
+
+.contact__form-name,
+.contact__form-mail,
+.contact__form-phone,
+.contact__form-select,
+.contact__form-message {
+    height: 38px;
+}
+
+
+
 
 /* *************** Footer *************** */
 
