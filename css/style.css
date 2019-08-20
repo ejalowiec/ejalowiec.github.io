@@ -302,6 +302,7 @@ html {
     padding: 80px 300px 100px;
     text-align: center;
     background-color: #f9fcfe;
+    background-image: url(../images/bg-pattern.png);
 }
 
 .about-me__title {
@@ -311,7 +312,8 @@ html {
 }
 
 .about-me__description {
-    font-size: 16px;
+    padding: 35px 15px 0;
+    font-size: 20px;
     font-weight: 300;
     /* margin: 20px 0; */
 }
@@ -319,9 +321,10 @@ html {
 /* *************** Section Abilities *************** */
 
 .page__sectionAbilities {
-    padding: 80px 0 15px;
+    padding: 80px 280px 15px;
     text-align: center;
     background-color: #fff;
+    background-image: url(../images/bg-pattern.png);
 }
 
 .abilities__title {
@@ -334,7 +337,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
     padding: 35px 15px;
     min-height: 500px;
@@ -365,6 +368,7 @@ html {
     padding: 20px 150px 80px;
     text-align: center;
     background-color: #f9fcfe;
+    background-image: url(../images/bg-pattern.png);
 }
 
 .now-learning__title {
@@ -423,25 +427,27 @@ html {
 /* *************** Contact *************** */
 
 .page__sectionContact {
-    padding: 80px 150px 100px;
+    padding: 80px 0 30px;
     text-align: center;
-    color: #f9fcfe;
+    color: #222;
     background-color: #f9fcfe;
     font-size: 24px;
     /* background-attachment: fixed; */
     /* background-size: cover; */
     /* background-position: center; */
-    background-image: linear-gradient(rgb(8, 20, 28), rgba(14, 216, 214, 0.5)), url(../images/bg-pattern.png)
+    background-image: linear-gradient(rgb(8, 20, 28), rgba(8, 22, 28, 0.911), rgba(8, 22, 28, 0.698), rgba(14, 216, 213, 0.671), rgba(14, 216, 214, 0.5), rgba(14, 216, 214, 0.5), rgba(14, 216, 214, 0.5), rgba(14, 216, 214, 0.5), rgba(14, 216, 214, 0.5), rgba(14, 216, 214, 0.5), rgba(14, 216, 214, 0.5), rgba(14, 216, 214, 0.4), rgba(14, 216, 214, 0.3), rgba(215, 255, 254, 0.5)), url(../images/bg-pattern.png)
 }
 
 .contact__title {
     font-size: 44px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 55px;
+    color: #f9fcfe;
 }
 
 .contact__wrap {
     display: flex;
+    padding: 80px 100px 30px 250px;
     /* justify-content: center; */
     /* align-items: center; */
     padding-top: 20px;
@@ -451,6 +457,12 @@ html {
     flex-basis: 30%;
 } */
 
+.contact__form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 55%;
+}
+
 .contact__formDescription-yourName,
 .contact__formDescription-yourEmail,
 .contact__formDescription-yourPhone,
@@ -459,10 +471,11 @@ html {
     margin-bottom: 5px;
 }
 
-.contact__form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 50%;
+/* Turn Off Number Input Spinners */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .contact__form-name,
@@ -473,8 +486,21 @@ html {
     height: 42px;
     width: 100%;
     margin-bottom: 20px;
-    padding: 10px;
-    font-size: 16px;
+    padding-left: 10px;
+    font-size: 24px;
+    font-family: 'Saira Condensed', sans-serif;
+    background-color: rgba(221, 221, 221, 0.657);
+    border: 1px solid #222;
+    outline: none;
+    border-radius: 3px;
+}
+
+.contact__form-message {
+    resize: none;
+}
+
+.contact__form-phone {
+    letter-spacing: 2px;
 }
 
 .contact__form-message {
@@ -486,34 +512,72 @@ html {
     padding: 15px 20px;
     font-size: 22px;
     font-family: 'Saira Condensed', sans-serif;
-    border: 2px solid white;
+    border: 2px solid #222;
     border-radius: 4%;
     text-transform: uppercase;
     background-color: transparent;
-    color: #fff;
-    cursor: pointer;
-}
-
-.contact__form-button:hover {
     color: #222;
-    background-color: #fff;
-    /* border: 2px solid #222; */
+    cursor: pointer;
     transition: 0.25s;
 }
 
-.contact__wrapSocials {
-    flex-basis: 50%;
-    padding-top: 30px;
+.contact__form-button:hover {
+    color: #fff;
+    background-color: #222;
 }
 
-.contact__wrapSocials-social {}
+.contact__wrapSocials {
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 50px 0 110px 80px;
+}
+
+.contact__wrapSocials-social {
+    /* line-height: 72px; */
+    display: flex;
+    align-items: center;
+}
+
+.contact__wrapSocials-social img {
+    transition: all 0.45s;
+}
+
+.contact__wrapSocials-social img:hover {
+    /* color: #0ed8d6; */
+    /* background-color: #fff; */
+    transform: rotate(360deg);
+}
+
+.contact__wrapSocials-social a:visited {
+    color: #222;
+}
 
 .contact__wrapSocials-social-span {
-    line-height: 72px;
+    display: inline-block;
+    margin-left: 20px;
+    /* padding: 10px; */
+    /* line-height: 72px; */
+}
+
+.contact__wrapSocials-social-span:hover {
+    padding: 6px 14px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #222;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 25px;
 }
 
 /* *************** Footer *************** */
 
 .page__footer {
-    background-color: rgb(185, 62, 24);
+    padding-top: 150px;
+    text-align: center;
+    font-size: 22px;
+    color: #222;
+    /* background-color: #fff; */
 }
