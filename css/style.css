@@ -31,8 +31,13 @@ html {
     padding-right: 40px;
     line-height: 1.8;
     text-transform: uppercase;
-    background-color: rgba(14, 216, 214, 0.6);
+    background-color: transparent;
+    transition: all 0.4s;
     z-index: 9999;
+}
+
+.main-nav.scrolled {
+    background-color: rgba(14, 216, 214, 0.6);
 }
 
 .main-nav__list {

@@ -134,21 +134,21 @@
             </div> -->
             <form class="contact__form form" action="https://formspree.io/eryk.jalowiec@gmail.com" method="POST">
                 <p class="contact__formDescription-yourName">Your Name</p>
-                <input class="contact__form-name" type="text">
+                <input class="contact__form-name" type="text" name="Name">
                 <p class="contact__formDescription-yourEmail">Your Email*</p>
-                <input class="contact__form-mail" type="text">
+                <input class="contact__form-mail" type="text" name="Mail">
                 <p class="contact__formDescription-yourPhone">Phone</p>
-                <input class="contact__form-phone" type="number">
+                <input class="contact__form-phone" type="number" name="Phone">
                 <p class="contact__formDescription-messageSubject">Message Subject*</p>
-                <select class="contact__form-select" name="messageSubjects">
+                <select class="contact__form-select" name="Message Subject">
                     <option value="Test">Just testing</option>
                     <option value="Job Offer">Job offer</option>
                     <option value="Business">Business</option>
                     <option value="Other">Other</option>
                 </select>
                 <p class="contact__formDescription-yourMessage">Message*</p>
-                <textarea class="contact__form-message"></textarea>
-                <input class="contact__form-button" type="submit" value="Submit form">
+                <textarea class="contact__form-message" name="Message"></textarea>
+                <input class="contact__form-button" type="submit" value="Submit form" name="Button">
                 <!-- <button class="contact__form-button"></button> -->
             </form>
             <div class="contact__wrapSocials">
@@ -169,6 +169,8 @@
         <!-- Footer -->
         <footer class="footer page__footer">Copyright &copy; 2019 Eryk Jałowiec</footer>
     </section>
+    <script src="js/jquery-3.4.1.min"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
