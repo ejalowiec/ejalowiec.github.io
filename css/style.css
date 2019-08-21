@@ -142,18 +142,18 @@ html {
 
 .header__wrap-arrow-1 {
     transform: translateY(-35px);
-    animation: arrow1 2.2s linear infinite;
+    animation: arrow1 1.9s linear infinite;
 
 }
 
 .header__wrap-arrow-2 {
     transform: translateY(-60px);
-    animation: arrow2 2.2s linear infinite;
+    animation: arrow2 1.9s linear infinite;
 }
 
 .header__wrap-arrow-3 {
     transform: translateY(-85px);
-    animation: arrow3 2.2s linear infinite;
+    animation: arrow3 1.9s linear infinite;
 }
 
 .header__wrap-arrow-1,
@@ -668,6 +668,29 @@ input[type=number]::-webkit-outer-spin-button {
     cursor: pointer;
     transition: 0.25s;
     font-size: 25px;
+}
+
+.contact__formspree {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 250px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contact__formspree img {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.contact__formspree-request {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 250px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 /* *************** Footer *************** */
