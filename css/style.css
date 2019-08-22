@@ -21,6 +21,38 @@ html {
     background-color: #ddd;
 }
 
+/* Scroll animations */
+
+.about-me__description,
+.abilities__wrap,
+.now-learning__skill {
+    transition: 0.65s;
+}
+
+.about-me__description,
+.now-learning__skill {
+    transform: translateX(-140%);
+}
+
+.abilities__wrap {
+    transform: translateX(140%);
+}
+
+.about-me__description.active,
+.abilities__wrap.active,
+.now-learning__skill.active {
+    transform: translateX(0);
+}
+
+/* Navigation animation */
+
+.naviActiveColor {
+    color: #ddd;
+}
+
+.naviActive {
+}
+
 /* *************** Main navigation *************** */
 
 .page__mainNav {
@@ -56,6 +88,7 @@ html {
     letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    transition: .3s;
 }
 
 .main-nav__list-item-link-i {
@@ -501,6 +534,7 @@ html {
     text-align: center;
     background-color: #fff;
     background-image: url(../images/bg-pattern.png);
+    overflow: hidden;
 }
 
 .abilities__title {
@@ -535,10 +569,11 @@ html {
 
 .abilities__MySQL {
     height: 78px;
+    width: 90px;
 }
 
 .abilities__skillCaption.abilities__MySQL {
-    margin-top: 6px;
+    margin: 6px auto 0;
 }
 
 /* *************** Section Now learning *************** */
