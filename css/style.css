@@ -47,11 +47,10 @@ html {
 /* Navigation animation */
 
 .naviActiveColor {
-    color: #ddd;
+    color: #222;
 }
 
-.naviActive {
-}
+.naviActive {}
 
 /* *************** Main navigation *************** */
 
@@ -122,12 +121,11 @@ html {
 .header__wrap {
     z-index: 1;
     top: 10%;
-    left: 15%;
+    left: 16%;
     right: 5%;
     font-family: 'Saira Condensed',
         sans-serif;
     color: white;
-    font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     overflow: hidden;
@@ -138,8 +136,8 @@ html {
     position: relative;
     left: 0;
     font-family: monospace;
-    font-size: 140px;
-    animation: typing 2s steps(6) forwards 1;
+    font-size: 160px;
+    animation: typing 2s steps(8) forwards 1;
 }
 
 .header__wrap-greetings::after {
@@ -151,7 +149,7 @@ html {
     top: 0;
     right: 0;
     border-left: 3px solid #fff;
-    animation: cursor 0.5s linear forwards 6, typing 6s steps(6) forwards 2;
+    animation: cursor 0.5s linear forwards 6;
 }
 
 @keyframes cursor {
@@ -195,7 +193,7 @@ html {
 
 @keyframes typing {
     0% {
-        left: -462px;
+        left: -47%;
     }
 
     100% {
@@ -205,11 +203,11 @@ html {
 
 .header__wrap-name {
     margin-top: 40px;
-    font-size: 60px;
+    font-size: 80px;
 }
 
 .header__wrap-profession {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: normal;
 }
 
@@ -218,7 +216,7 @@ html {
     text-align: center;
     margin-top: 80px;
     margin-left: 100px;
-    width: 500px;
+    width: 540px;
     min-height: 200px;
     font-weight: 300;
     font-size: 28px;
@@ -226,6 +224,7 @@ html {
 }
 
 .header__wrap-p {
+    font-size: 32px;
     margin-bottom: 25px;
 }
 
@@ -357,6 +356,60 @@ html {
     bottom: 0;
     right: 0;
 }
+
+@media (orientation: landscape) and (max-width: 1600px) {
+    .header__wrap {
+        top: 15%;
+    }
+
+    .header__wrap-greetings {
+        font-size: 130px;
+    }
+
+    .header__wrap-name {
+        font-size: 70px;
+    }
+
+    .header__wrap-profession {
+        font-size: 60px;
+    }
+
+    .header__wrapWrap {
+        margin-left: 60px;
+    }
+
+    .header__wrap-p {
+        font-size: 30px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1440px) {
+    .header__wrap {
+        top: 17%;
+    }
+
+    .header__wrap-greetings {
+        font-size: 110px;
+    }
+
+    .header__wrap-name {
+        font-size: 60px;
+    }
+
+    .header__wrap-profession {
+        font-size: 50px;
+    }
+
+    .header__wrapWrap {
+        margin-left: 30px;
+    }
+
+    .header__wrap-p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1024px) {}
 
 /* @media (orientation: portrait) and (min-width: 360px) {
 

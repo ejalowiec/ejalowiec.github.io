@@ -37,7 +37,7 @@
     <!-- Header -->
     <header id="home" class="header page__header">
         <div class="header__wrap">
-            <p class="header__wrap-greetings">Hello!</p>
+            <p class="header__wrap-greetings">Welcome!</p>
             <h1 class="header__wrap-name">I am Eryk Jałowiec</h1>
             <h2 class="header__wrap-profession">Future Linux Administrator</h2>
             <div class="header__wrapWrap">
@@ -142,18 +142,18 @@
                 <p class="contact__formDescription-yourName">Your Name</p>
                 <input class="contact__form-name" type="text" name="Name">
                 <p class="contact__formDescription-yourEmail">Your Email*</p>
-                <input class="contact__form-mail" type="text" name="Mail">
+                <input class="contact__form-mail" type="text" name="Mail" required>
                 <p class="contact__formDescription-yourPhone">Phone</p>
                 <input class="contact__form-phone" type="number" name="Phone">
-                <p class="contact__formDescription-messageSubject">Message Subject*</p>
-                <select class="contact__form-select" name="Message Subject">
+                <p class="contact__formDescription-messageSubject">Message Subject</p>
+                <select class="contact__form-select" name="Message Subject" required>
                     <option value="None">Choose subject</option>
                     <option value="Job Offer">Job offer</option>
                     <option value="Business">Business</option>
                     <option value="Other">Other</option>
                 </select>
                 <p class="contact__formDescription-yourMessage">Message*</p>
-                <textarea class="contact__form-message" name="Message"></textarea>
+                <textarea class="contact__form-message" name="Message" required></textarea>
                 <input class="contact__form-button" type="submit" value="Submit form">
             </form>
             <div class="contact__wrapSocials">
