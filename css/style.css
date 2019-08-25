@@ -808,7 +808,7 @@ html {
 
     .abilities__skill {
         flex-basis: 50%;
-        padding: 30px 0;
+        padding: 30px 50px;
     }
 }
 
@@ -866,15 +866,54 @@ html {
     font-size: 42px;
 }
 
-@media (max-width: 1600px) {}
+@media (max-width: 1600px) {
+    .now-learning__skill-i {
+        font-size: 250px;
+    }
 
-@media (max-width: 1280px) {}
+    .now-learning__skillCaption {
+        font-size: 38px;
+    }
+}
 
-@media (max-width: 1024px) {}
+@media (max-width: 1280px) {
+    .now-learning__skill-i {
+        font-size: 220px;
+    }
 
-@media (max-width: 768px) {}
+    .now-learning__skillCaption {
+        margin-top: 34px;
+        font-size: 34px;
+    }
+}
 
-@media (max-width: 360px) {}
+@media (max-width: 1024px) {
+    .now-learning__skill-i {
+        font-size: 200px;
+    }
+
+    .now-learning__skillCaption {
+        margin-top: 30px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page__sectionNowLearning {
+        padding: 20px 60px 80px;
+    }
+
+    .now-learning__skill-i {
+        font-size: 170px;
+    }
+
+    .now-learning__skillCaption {
+        margin-top: 30px;
+        font-size: 28px;
+    }
+}
+
+/* @media (max-width: 360px) {} */
 
 
 /* *************** Quote *************** */
@@ -903,15 +942,56 @@ html {
     color: rgba(14, 216, 214)
 }
 
-@media (max-width: 1400px) {}
+@media (max-width: 1600px) {
+    .page__sectionQuote {
+        font-size: 45px;
+    }
+}
 
-@media (max-width: 1280px) {}
+@media (max-width: 1400px) {
+    .page__sectionQuote {
+        font-size: 40px;
+    }
+}
 
-@media (max-width: 1024px) {}
+@media (max-width: 1280px) {
+    .page__sectionQuote {
+        flex-basis: 70vh;
+        font-size: 38px;
+    }
+}
 
-@media (max-width: 768px) {}
+@media (max-width: 1024px) {
+    .page__sectionQuote {
+        font-size: 35px;
+    }
+}
 
-@media (max-width: 360px) {}
+@media (max-width: 900px) {
+    .page__sectionQuote {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page__sectionQuote {
+        flex-basis: 70vh;
+        font-size: 30px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .quote__blockquote {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .page__sectionQuote {
+        font-size: 26px;
+    }
+}
 
 /* *************** Contact *************** */
 
