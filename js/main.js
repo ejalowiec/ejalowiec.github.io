@@ -56,15 +56,15 @@ $(window).on('scroll', function () {
     const heightAbilities = $abilities.outerHeight();
     const heightNowLearning = $nowLearning.outerHeight();
 
-    if (scrollValue > whenStartAboutMe + heightAboutMe / 2 - windowHeight) {
+    if (scrollValue > whenStartAboutMe + heightAboutMe / 4 - windowHeight) {
         $aboutMe.addClass('active');
     }
 
-    if (scrollValue > whenStartAbilities + heightAbilities / 2 - windowHeight) {
+    if (scrollValue > whenStartAbilities + heightAbilities / 8 - windowHeight) {
         $abilities.addClass('active');
     }
 
-    if (scrollValue > whenStartNowLearning + heightNowLearning / 2 - windowHeight) {
+    if (scrollValue > whenStartNowLearning + heightNowLearning / 4 - windowHeight) {
         $nowLearning.addClass('active');
     }
 

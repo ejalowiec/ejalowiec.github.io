@@ -580,7 +580,7 @@ html {
     }
 
     .header__wrap-greetings {
-        font-size: 50px;
+        font-size: 58px;
         animation: none;
     }
 
@@ -590,23 +590,21 @@ html {
     }
 
     .header__wrap-name {
-        font-size: 34px;
+        font-size: 36px;
     }
 
     .header__wrap-profession {
-        font-size: 25px;
+        font-size: 26px;
     }
 
     .header__wrapWrap {
         margin-top: 50px;
-        margin-right: 14px;
         margin-left: 0;
-        width: 250px;
+        width: 310px;
     }
 
     .header__wrap-p {
-        display: inline-block;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .header__wrap-arrow {
@@ -1282,6 +1280,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .contact__wrapSocials-social img:hover {
+        color: #222;
         transform: rotate(0deg);
     }
 
