@@ -835,7 +835,7 @@ html {
 /* *************** Section Now learning *************** */
 
 .page__sectionNowLearning {
-    padding: 20px 150px 80px;
+    padding: 20px 170px 80px;
     text-align: center;
     background-color: #f9fcfe;
     background-image: url(../images/bg-pattern.png);
@@ -852,7 +852,7 @@ html {
 }
 
 .now-learning__skill {
-    flex-basis: 100%;
+    flex-basis: 50%;
 }
 
 .now-learning__skill-i {
@@ -901,12 +901,24 @@ html {
         padding: 20px 60px 80px;
     }
 
+    .now-learning__wrap {
+        flex-wrap: wrap;
+    }
+
+    .now-learning__skill {
+        flex-basis: 100%;
+    }
+
+    .now-learning__skill:nth-child(2) {
+        margin-top: 30px;
+    }
+
     .now-learning__skill-i {
-        font-size: 170px;
+        font-size: 140px;
     }
 
     .now-learning__skillCaption {
-        margin-top: 30px;
+        margin-top: 20px;
         font-size: 28px;
     }
 }
