@@ -77,7 +77,6 @@ $(window).on('scroll', function () {
 
 })
 
-
 //Add marker in the menu and switches color depending on the background to stay visible
 function changeDot() {
     const scrollValue = $(window).scrollTop();
